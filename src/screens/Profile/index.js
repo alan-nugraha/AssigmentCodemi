@@ -19,7 +19,6 @@ function Profile() {
   const navigation = useNavigation();
   const [userData, setUserData] = useState([]);
   const [swipeQr, setSwipeQr] = useState(false);
-  const [loading, setLoading] = useState(false);
 
   const getData = async () => {
     const data = await AsyncStorage.getItem('@userdata');
