@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   textButton: {
-    fontFamily: 'Roboto-Regular',
+    fontFamily: 'Roboto-Light',
     fontSize: 12,
     color: '#fff',
   },
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     color: '#14274E',
   },
   textModal: {
-    fontFamily: 'Roboto-Regular',
+    fontFamily: 'PublicaSans-Medium',
     fontSize: 15,
   },
   container: {
