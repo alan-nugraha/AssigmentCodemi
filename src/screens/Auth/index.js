@@ -9,8 +9,11 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import AsyncStorage from '@react-native-community/async-storage';
+import {useNavigation} from '@react-navigation/native';
 
-function Auth(props) {
+function Auth() {
+  const navigation = useNavigation();
+
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [hidePassword, setHidePassword] = useState(true);
@@ -31,7 +34,7 @@ function Auth(props) {
         ToastAndroid.SHORT,
         ToastAndroid.BOTTOM,
       );
-      props.navigation.navigate('Home');
+      navigation.replace('Home');
     } else {
       ToastAndroid.showWithGravity(
         'Login Failed',
