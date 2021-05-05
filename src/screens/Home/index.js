@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   textButton: {
-    fontFamily: 'Roboto-Light',
+    fontFamily: 'PublicaSans-Light',
     fontSize: 12,
     color: '#fff',
   },
